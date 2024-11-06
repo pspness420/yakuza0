@@ -1,12 +1,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Slideshow functions
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -30,3 +29,14 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// Contact 
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  console.log(`Name: ${name}, \n Email: ${email}, \n Message: ${message} \n`);
+});
