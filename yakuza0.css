@@ -1,0 +1,247 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body and overall page styling */
+body {
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+text-align: center;
+}
+
+/* Navigation styling */
+header {
+  background: linear-gradient(135deg, white, red);
+  color: black;
+  padding: 1rem 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header ul li a {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+header ul li a:hover {
+  color: #ffb347;
+}
+
+/* Banner Section */
+.banner {
+  background: url('https://media1.tenor.com/m/nTdZAC7H9GYAAAAd/kiryu-punches-majima-yakuza0loading-screen.gif') no-repeat center center/cover;
+  color: gray;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* About Section */
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.about-logo img {
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+#about h2 {
+  color: red;
+}
+
+#about p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Character Section */
+.character-item {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid red;
+}
+
+.character-item h3 {
+  color: red;
+}
+
+.character-item img {
+  max-width: 150px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Story Section */
+#story fieldset {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid purple;
+  border-radius: 10px;
+  background: url('https://cdn2.steamgriddb.com/hero/96da2f590cd7246bbde0051047b0d6f7.png') no-repeat center center/cover;
+  color: black;
+}
+
+#story legend {
+  color: #6a11cb;
+  font-weight: bold;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(135deg, black, red);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+
+.mySlides {
+  display: none;
+  border-radius: 8px;
+}
+
+/* Navigation arrows */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 50%;
+  background: linear-gradient(135deg, black, gray);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background: linear-gradient(135deg, blue, purple);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Thumbnail images */
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.column img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.demo.active {
+  border: 3px solid #ff416c;
+  border-radius: 5px;
+}
+
+/* Caption text */
+.caption {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 8px 8px;
+  margin-top: -8px;
+}
+
+/* Footer styling */
+footer {
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
